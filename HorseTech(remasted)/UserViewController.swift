@@ -24,7 +24,7 @@ class UserViewController: UIViewController {
         //настройки для кнопки
         changeTypeButton.layer.cornerRadius = 15
         changeTypeButton.clipsToBounds = true
-        changeTypeButton.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        changeTypeButton.backgroundColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
         changeTypeButton.layer.borderWidth = 2
         changeTypeButton.layer.borderColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
         changeTypeButton.setTitle("Изменить", for: .normal)

@@ -17,6 +17,14 @@ class ArticleViewController: UIViewController {
     @IBOutlet weak var textViewHC: NSLayoutConstraint!
     @IBOutlet weak var viewHC: NSLayoutConstraint!
     @IBOutlet weak var videoView: WKWebView!
+    @IBOutlet weak var viewItems: UIView!
+    
+    //аутлеты блока Совет
+    @IBOutlet weak var textViewAdvice: UITextView!
+    @IBOutlet weak var textViewAdviceHC: NSLayoutConstraint!
+    @IBOutlet weak var viewAdviceHC: NSLayoutConstraint!
+   
+    
     
     
     var article: Article!
@@ -24,10 +32,11 @@ class ArticleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = article.name.rawValue
+        
+//        title = article.name.rawValue
         nameLabel.text = article.name.rawValue
-        imageView.image = UIImage(named: article.image.rawValue)
-        imageView.contentMode = .scaleAspectFill
+//        imageView.image = UIImage(named: article.image.rawValue)
+//        imageView.contentMode = .scaleAspectFill
         
         //настройка характеристик текстВью
         textView.text = article.text.rawValue
@@ -37,9 +46,25 @@ class ArticleViewController: UIViewController {
         textViewHC.constant = textView.contentSize.height
         viewHC.constant = textView.contentSize.height
         
+        //настройка блока Совет + autosize
+        textViewAdvice.text = article.textAdvice.rawValue
+        textViewAdvice.isEditable = false
+        textViewAdviceHC.constant = textViewAdvice.contentSize.height
+        viewAdviceHC.constant = textViewAdvice.contentSize.height + 100
+
+        
          
         //настройка видео youTube
         getVideo(videoCode: article.video.rawValue)
+        
+        //настройка вью items
+        viewItems.backgroundColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+//        viewItems.alpha = 0.75
+//        viewItems.layer.shadowColor = UIColor.black.cgColor
+//        viewItems.layer.shadowOpacity = 1
+////        viewItems.layer.shadowOffset = CGSize.zero
+//        viewItems.layer.shadowRadius = 5
+        
         
     }
     
@@ -50,6 +75,7 @@ class ArticleViewController: UIViewController {
         videoView.load(URLRequest(url: url!))
     }
     
-
+    
+    
 }
 

@@ -62,12 +62,14 @@ class SecondPageViewController: UIViewController, UITextFieldDelegate {
         button.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
         button.layer.borderColor = (#colorLiteral(red: 0.5704585314, green: 0.5704723597, blue: 0.5704649091, alpha: 1)).cgColor
         button.setTitle("Дальше", for: .normal)
+        
     }
 
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         
         guard let title = textField.text, !title.isEmpty else {return}
+       
         let name = person
         name.name = title
         

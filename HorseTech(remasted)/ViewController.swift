@@ -15,10 +15,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var notFoundLabel: UILabel!
+    @IBOutlet weak var viewForHeader: UIView!
     
-    private let articles = [Article(name: .firstTitle, image: .firstPage, text: .firstCell, video: .firstVideo),
-                            Article(name: .secondTitle, image: .secondPage, text: .secondCell, video: .secondVideo),
-                            Article(name: .thirdTitle, image: .thirdPage, text: .thirdCell, video: .thridVideo)]
+    private let articles = [Article(name: .firstTitle, image: .firstPage, text: .firstCell, textAdvice: .firstCell, video: .firstVideo, difficulty: .easy),
+                            Article(name: .secondTitle, image: .secondPage, text: .secondCell, textAdvice: .secondCell, video: .secondVideo, difficulty: .medium),
+                            Article(name: .thirdTitle, image: .thirdPage, text: .thirdCell, textAdvice: .thirdCell, video: .thridVideo, difficulty: .high)]
     
 //    private let articles = [Article(name: "Как и чем смазывать цепь", image: .firstPage, text: .firstCell),
 //                    Article(name: "Как исправить восьмерку на колесе", image: .secondPage, text: .secondCell),
@@ -39,6 +40,10 @@ class ViewController: UIViewController {
     
     // MARK: for searchController
     let searchController = UISearchController(searchResultsController: nil)
+    
+ 
+    
+    
     private var filteredArticles = [Article]()
     private var searchBarIsEmpty:Bool{
         guard let text = searchController.searchBar.text else {return false}
@@ -56,8 +61,11 @@ class ViewController: UIViewController {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Найти..."
-        searchController.searchBar.tintColor = .systemBlue //бегунок
+        searchController.searchBar.tintColor = .black //бегунок
         searchController.searchBar.searchTextField.backgroundColor = .white
+        
+       
+     
         
         navigationItem.searchController = searchController
         definesPresentationContext = true
@@ -69,6 +77,15 @@ class ViewController: UIViewController {
         
         //убрать слово "back" из навигейшена
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        //изменение цвета backButtonItem
+        navigationController?.navigationBar.tintColor = .black
+        
+        
+//MARK: тестовые изменения
+        
+//        tableView.layer.cornerRadius = 30
+        viewForHeader.layer.cornerRadius = 30
+        
     }
     
     
@@ -112,12 +129,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
         cell.labelText.text = article.name.rawValue
         cell.imageView?.image = UIImage(named: article.image.rawValue)
+        cell.difficultyImage.image = UIImage(named: article.difficulty.rawValue)
         
-        
+
+
         
         
         return cell
     }
+    
+   
     
    //MARK: попытка передать данные на другой вью
   
@@ -141,6 +162,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
+    
     
 }
 
