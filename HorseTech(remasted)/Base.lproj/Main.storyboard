@@ -56,7 +56,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="HorseTech_remasted_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainPic" translatesAutoresizingMaskIntoConstraints="NO" id="HsW-7L-HAl">
@@ -66,17 +66,17 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxQ-cz-mYn">
-                                <rect key="frame" x="0.0" y="247" width="414" height="69"/>
+                                <rect key="frame" x="0.0" y="247" width="414" height="89"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Инструкции по эксплуатации велосипеда" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYq-ty-ibn">
-                                <rect key="frame" x="20" y="261.66666666666669" width="374" height="16"/>
+                                <rect key="frame" x="20" y="261.66666666666669" width="374" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8tT-Kk-PdC">
-                                <rect key="frame" x="0.0" y="296" width="414" height="371"/>
+                                <rect key="frame" x="0.0" y="316" width="414" height="371"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="371" id="Oth-eJ-Zmm"/>
@@ -144,7 +144,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bg-TD-Wjf">
-                                <rect key="frame" x="186" y="348" width="42" height="20.333333333333314"/>
+                                <rect key="frame" x="186" y="358" width="42" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -188,11 +188,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="eXq-HP-uP4" customClass="ArticleViewController" customModule="HorseTech_remasted_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B0Q-dO-AxI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-Mr-MI5">
-                                <rect key="frame" x="0.0" y="56" width="414" height="611"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mpo-z8-ma8">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1030"/>
@@ -454,6 +454,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="haf-dN-cEC" kind="relationship" relationship="viewControllers" id="VPb-7H-4vF"/>
@@ -754,11 +755,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="nWL-a8-c6e" customClass="UserViewController" customModule="HorseTech_remasted_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Ox-Ag-M4t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backImg3" translatesAutoresizingMaskIntoConstraints="NO" id="Xmw-Ab-bPz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horse" translatesAutoresizingMaskIntoConstraints="NO" id="VIe-Rt-sQ2">
                                 <rect key="frame" x="139" y="15" width="136" height="166"/>
@@ -802,7 +803,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Горный" translatesAutoresizingMaskIntoConstraints="NO" id="eiY-ER-jxi">
-                                <rect key="frame" x="85" y="342" width="245" height="157"/>
+                                <rect key="frame" x="84.666666666666686" y="342" width="245" height="157"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="245" id="Ccw-Wm-chw"/>
                                     <constraint firstAttribute="height" constant="157" id="rkQ-WJ-rZc"/>
@@ -885,7 +886,7 @@
                     <tabBarItem key="tabBarItem" title="Главная" image="bicycle" catalog="system" id="YoL-Rm-isV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oRZ-P7-GN0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -899,6 +900,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="jhu-bc-bcp"/>
         <segue reference="2gy-P4-T9N"/>
     </inferredMetricsTieBreakers>
     <resources>
