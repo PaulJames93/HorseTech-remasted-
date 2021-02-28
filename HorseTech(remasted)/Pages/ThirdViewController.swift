@@ -141,6 +141,6 @@ class ThirdViewController: UIViewController {
     @IBAction func skipButtonPressed() {
         dismiss(animated: true, completion: nil)
     }
-    
+//    
 
 }
