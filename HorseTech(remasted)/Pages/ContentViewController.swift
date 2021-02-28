@@ -35,7 +35,7 @@ class ContentViewController: UIViewController {
         pageButton.layer.borderWidth = 2
         pageButton.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
         pageButton.layer.borderColor = (#colorLiteral(red: 0.5704585314, green: 0.5704723597, blue: 0.5704649091, alpha: 1)).cgColor
-        pageButton.setTitle("Отлично, начнем!", for: .normal)
+        pageButton.setTitle("Далее", for: .normal)
 
 
     }

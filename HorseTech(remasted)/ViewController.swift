@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewForHeader: UIView!
     
     private let articles = [Article(name: .firstTitle, image: .firstPage, text: .firstCell, textAdvice: .firstCell, video: .firstVideo, difficulty: .easy),
-                            Article(name: .secondTitle, image: .secondPage, text: .secondCell, textAdvice: .secondCell, video: .secondVideo, difficulty: .medium),
+                            Article(name: .secondTitle, image: .secondPage, text: .secondCell, textAdvice: .secondCell, video: .secondVideo, difficulty: .high),
                             Article(name: .thirdTitle, image: .thirdPage, text: .thirdCell, textAdvice: .thirdCell, video: .thridVideo, difficulty: .high)]
     
 //    private let articles = [Article(name: "Как и чем смазывать цепь", image: .firstPage, text: .firstCell),
@@ -61,6 +61,7 @@ class ViewController: UIViewController {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Найти..."
+        
         searchController.searchBar.tintColor = .black //бегунок
         searchController.searchBar.searchTextField.backgroundColor = .white
         
@@ -81,7 +82,7 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .black
         
         
-//MARK: тестовые изменения
+//MARK: закругление краев у вью над tableView
         
 //        tableView.layer.cornerRadius = 30
         viewForHeader.layer.cornerRadius = 30
@@ -140,11 +141,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
    
     
-   //MARK: попытка передать данные на другой вью
+   //MARK: передать данные на другой вью
   
-   
-    
-    
     //MARK: prepare for segue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -193,10 +191,10 @@ extension ViewController: UISearchResultsUpdating {
         case 0:
             notFoundLabel.text = "Ничего не найдено.\n Повторите запрос"
             tableView.separatorStyle = .none
+
         default:
             break
         }
-        
     }
 }
 

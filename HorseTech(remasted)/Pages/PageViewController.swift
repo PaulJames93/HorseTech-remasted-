@@ -10,9 +10,9 @@ import UIKit
 
 class PageViewController: UIPageViewController {
     
-    var headerArray = ["Первая помощь для твоего велосипеда", "Укажите свое имя"]
+    var headerArray = ["Первая помощь для твоего велосипеда", "Как вас зовут?"]
     var subHeader = ["Используйте этот карманный справочник, чтобы оперативно починить свой велосипед. Мы постарались собрать только лучшие практики для того, чтобы ваш железный конь работал исправно как можно дольше!", "Меня зовут - "]
-    var imagesArray = ["Фото1","Фото2"]
+    var imagesArray = ["bike0","Bike2"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

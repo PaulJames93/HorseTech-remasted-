@@ -50,7 +50,7 @@ class ArticleViewController: UIViewController {
         textViewAdvice.text = article.textAdvice.rawValue
         textViewAdvice.isEditable = false
         textViewAdviceHC.constant = textViewAdvice.contentSize.height
-        viewAdviceHC.constant = textViewAdvice.contentSize.height + 100
+        viewAdviceHC.constant = textViewAdvice.contentSize.height + 50
 
         
          

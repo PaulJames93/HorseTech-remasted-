@@ -73,5 +73,12 @@ class UserViewController: UIViewController {
     @IBAction func changeButtonTapped(_ sender: Any) {
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "changeName" {
+            let detailVC = segue.destination as! SecondPageViewController
+            detailVC.namePlaceholder = nameLabel.text!
+        }
+    }
   
 }
