@@ -40,16 +40,16 @@ enum ArticleName: String {
 enum ArticleImage: String {
     case firstPage = "oil"
     case secondPage = "wheel"
-    case thirdPage = "chain"
-    case fourPage
-    case fivePage
-    case sixPage
-    case sevenPage
-    case eightPage
-    case ninePage
-    case tenPage
-    case elevenPage
-    case twelvePage
+    case thirdPage = "speed"
+    case fourPage = "buy"
+    case fivePage = "prokol"
+    case sixPage = "train"
+    case sevenPage = "skorost"
+    case eightPage = "podSebya"
+    case ninePage = "pump"
+    case tenPage = "pedal"
+    case elevenPage = "sezon"
+    case twelvePage = "shlem"
     
 }
 
