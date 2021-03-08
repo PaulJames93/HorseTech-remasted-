@@ -44,6 +44,8 @@ class ThirdViewController: UIViewController {
         // настройка картинкок с велосипедами
         defaultSettingButton()
         
+        doneButton.isHidden = true
+        
     }
     
     func skipButtonSetup(){
@@ -106,6 +108,8 @@ class ThirdViewController: UIViewController {
         roadBikeButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         crossButton = true
         
+        doneButton.isHidden = false
+        
         //сохранение данных в Realm
 //        let save = images
 //        save.image = "Горный"
@@ -118,6 +122,7 @@ class ThirdViewController: UIViewController {
         roadBikeButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         cityButton = true
 
+        doneButton.isHidden = false
         
         //сохранение данных в Realm
 //        let save1 = images
@@ -131,6 +136,7 @@ class ThirdViewController: UIViewController {
         roadBikeButton.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         roadButton = true
         
+        doneButton.isHidden = false
         //сохранение данных в Realm
 //        let save2 = images
 //        save2.image = "Шоссейный"
@@ -141,6 +147,6 @@ class ThirdViewController: UIViewController {
     @IBAction func skipButtonPressed() {
         dismiss(animated: true, completion: nil)
     }
-//    
+//
 
 }

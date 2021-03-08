@@ -18,6 +18,7 @@ class SecondPageViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var skipButton: UIButton!
     
+    @IBOutlet weak var scrollView: UIScrollView!
     
     let header = "Давай знакомиться!"
     let subHearder = "Как вас зовут?"
@@ -44,8 +45,26 @@ class SecondPageViewController: UIViewController, UITextFieldDelegate {
         //настройка кнопки перед тем как текстФилд еще не заполнен
         button.isHidden = true
         
+        
+        // настройка логики появления и скрытия клавиатуры
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
 //        textField.becomeFirstResponder()
         }
+    
+    @objc func keyboard(notification: Notification) {
+    let userInfo = notification.userInfo!
+    let keyboardScreenEndFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, to: view.window)
+    if notification.name == UIResponder.keyboardWillHideNotification {
+    scrollView.contentInset = UIEdgeInsets.zero
+    } else {
+    scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardViewEndFrame.height + 20, right: 0)
+    }
+        scrollView.scrollIndicatorInsets = scrollView.contentInset
+        
+    }
     
     func setupTextField() {
         textField.delegate = self

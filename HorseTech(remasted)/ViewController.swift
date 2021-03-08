@@ -17,9 +17,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var notFoundLabel: UILabel!
     @IBOutlet weak var viewForHeader: UIView!
     
-    private let articles = [Article(name: .firstTitle, image: .firstPage, text: .firstCell, textAdvice: .firstCell, video: .firstVideo, difficulty: .easy),
+    private let articles = [
+        
+                            Article(name: .firstTitle, image: .firstPage, text: .firstCell, textAdvice: .firstCell, video: .firstVideo, difficulty: .easy),
+                            //как исправить восьмерку
                             Article(name: .secondTitle, image: .secondPage, text: .secondCell, textAdvice: .secondCell, video: .secondVideo, difficulty: .high),
-                            Article(name: .thirdTitle, image: .thirdPage, text: .thirdCell, textAdvice: .thirdCell, video: .thridVideo, difficulty: .high)]
+                            //как настроить переключение передач
+                            Article(name: .thirdTitle, image: .thirdPage, text: .thirdCell, textAdvice: .thirdCell, video: .thridVideo, difficulty: .medium),
+                            //как подобрать велосипед
+                            Article(name: .forthTitle, image: .fourPage, text: .fourCell, textAdvice: .fourCell, video: .forthVideo, difficulty: .easy),
+                            //как заклеить камеру
+                            Article(name: .fifthTitle, image: .fivePage, text: .fiveCell, textAdvice: .fiveCell, video: .fifthVideo, difficulty: .easy),
+                            // как перевозить велосипед в электричке
+                            Article(name: .sixthTitle, image: .sixPage, text: .sixCell, textAdvice: .sixCell, video: .sixthVideo, difficulty: .easy),
+                            // как увеличить скорость велосипеда
+                            Article(name: .seventhTitle, image: .sevenPage, text: .sevenCell, textAdvice: .sevenCell, video: .sevenVideo, difficulty: .easy),
+                            //как правильно натсроить под себя велик
+                            Article(name: .eightTitle, image: .eightPage, text: .eightCell, textAdvice: .eightCell, video: .eightVideo, difficulty: .easy),
+                            //сколько качать в колесо
+                            Article(name: . ninethTitle, image: .ninePage, text: .nineCell, textAdvice: .nineCell, video: .ninthVideo, difficulty: .easy),
+                            //как правильно крутить педали
+                            Article(name: . tenthTitle, image: .tenPage, text: .tenCell, textAdvice: .tenCell, video: .tenthVideo, difficulty: .easy),
+                            // как подготовить велик к сезону
+                            Article(name: . eleventhTitle, image: .elevenPage, text: .elevenCell, textAdvice: .elevenCell, video: .eleventhVideo, difficulty: .easy),
+                            // что нужно для безопасного вождения
+                            Article(name: . twelveTitle, image: .twelvePage, text: .twelveCell, textAdvice: .twelveCell, video: .twelvethVideo, difficulty: .easy)
+    ]
     
 //    private let articles = [Article(name: "Как и чем смазывать цепь", image: .firstPage, text: .firstCell),
 //                    Article(name: "Как исправить восьмерку на колесе", image: .secondPage, text: .secondCell),
