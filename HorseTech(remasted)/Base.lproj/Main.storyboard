@@ -406,7 +406,7 @@
         <!--Page View Controller-->
         <scene sceneID="ccR-ua-XyQ">
             <objects>
-                <pageViewController storyboardIdentifier="pageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="SqX-WT-SmO" customClass="PageViewController" customModule="HorseTech_remasted_" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="pageViewController" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="SqX-WT-SmO" customClass="PageViewController" customModule="HorseTech_remasted_" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlr-Rh-qbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-759" y="789"/>
@@ -414,7 +414,7 @@
         <!--Content View Controller-->
         <scene sceneID="N5b-2G-cHs">
             <objects>
-                <viewController storyboardIdentifier="contentViewController" id="ffY-bR-Jrr" customClass="ContentViewController" customModule="HorseTech_remasted_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="contentViewController" modalPresentationStyle="fullScreen" id="ffY-bR-Jrr" customClass="ContentViewController" customModule="HorseTech_remasted_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2rJ-ee-j2s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -867,7 +867,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="otu-cN-2dR"/>
+        <segue reference="F2U-LT-nk7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Bike2" width="1400" height="980"/>
