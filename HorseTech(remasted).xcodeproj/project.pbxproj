@@ -22,7 +22,6 @@
 		7BE272B925AA1787008B3349 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE272B825AA1787008B3349 /* ArticleModel.swift */; };
 		7BE272BC25AA17C8008B3349 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE272BB25AA17C8008B3349 /* ArticleCell.swift */; };
 		7BE272BF25AA17F7008B3349 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE272BE25AA17F7008B3349 /* ArticleViewController.swift */; };
-		7BE272C225AA1834008B3349 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE272C125AA1834008B3349 /* FavoriteViewController.swift */; };
 		7BE272C625AA186F008B3349 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE272C525AA186F008B3349 /* UserViewController.swift */; };
 		7BE272CA25AA18CD008B3349 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE272C925AA18CD008B3349 /* PageViewController.swift */; };
 		7BE272CE25AA190E008B3349 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE272CD25AA190E008B3349 /* ContentViewController.swift */; };
@@ -48,7 +47,6 @@
 		7BE272B825AA1787008B3349 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		7BE272BB25AA17C8008B3349 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		7BE272BE25AA17F7008B3349 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
-		7BE272C125AA1834008B3349 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		7BE272C525AA186F008B3349 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		7BE272C925AA18CD008B3349 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		7BE272CD25AA190E008B3349 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				7BE272A225AA1524008B3349 /* ViewController.swift */,
 				7BE272BB25AA17C8008B3349 /* ArticleCell.swift */,
 				7BE272BE25AA17F7008B3349 /* ArticleViewController.swift */,
-				7BE272C125AA1834008B3349 /* FavoriteViewController.swift */,
 				7BE272C525AA186F008B3349 /* UserViewController.swift */,
 				7BC31D6225AB3FE900970FE6 /* Setting Views ArticleVC */,
 				7BC31D5925AB2F3C00970FE6 /* Lottie. SplashScreen */,
@@ -317,7 +314,6 @@
 				7BE2729F25AA1524008B3349 /* AppDelegate.swift in Sources */,
 				7BC31D5325AB24FE00970FE6 /* UserModel.swift in Sources */,
 				7BE272D125AA193D008B3349 /* SecondPageViewController.swift in Sources */,
-				7BE272C225AA1834008B3349 /* FavoriteViewController.swift in Sources */,
 				7BC31D5B25AB2F6400970FE6 /* SplashViewController.swift in Sources */,
 				7BE272B925AA1787008B3349 /* ArticleModel.swift in Sources */,
 				7BE272CA25AA18CD008B3349 /* PageViewController.swift in Sources */,

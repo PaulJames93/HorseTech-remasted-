@@ -26,7 +26,7 @@ class ViewController: UIViewController {
                             Article(name: .thirdTitle, image: .thirdPage, text: .thirdCell, textAdvice: .thirdCell, video: .thridVideo, difficulty: .medium),
                             //как подобрать велосипед
                             Article(name: .forthTitle, image: .fourPage, text: .fourCell, textAdvice: .fourCell, video: .forthVideo, difficulty: .easy),
-                            //как заклеить камеру
+                            //как заклеить камру
                             Article(name: .fifthTitle, image: .fivePage, text: .fiveCell, textAdvice: .fiveCell, video: .fifthVideo, difficulty: .easy),
                             // как перевозить велосипед в электричке
                             Article(name: .sixthTitle, image: .sixPage, text: .sixCell, textAdvice: .sixCell, video: .sixthVideo, difficulty: .easy),
@@ -44,22 +44,6 @@ class ViewController: UIViewController {
                             Article(name: . twelveTitle, image: .twelvePage, text: .twelveCell, textAdvice: .twelveCell, video: .twelvethVideo, difficulty: .easy)
     ]
     
-//    private let articles = [Article(name: "Как и чем смазывать цепь", image: .firstPage, text: .firstCell),
-//                    Article(name: "Как исправить восьмерку на колесе", image: .secondPage, text: .secondCell),
-//                    Article(name: "Как настроить передачи (манетки)", image: .thirdPage, text: .thirdCell),
-//                    Article(name: "Как заделать прокол в камере", image: .thirdPage, text: .thirdCell),
-//                    Article(name: "Как правильно пристегивать велописпед", image: .thirdPage, text: .thirdCell),
-//                    Article(name: "Слетает цепь: что делать?", image: .thirdPage, text: .thirdCell),
-//                    Article(name: "Как менять камеру и покрышку на колесе", image: .thirdPage, text: .thirdCell),
-//                    Article(name: "Как и чем чистить велосипед", image: .thirdPage, text: .thirdCell),
-//                    Article(name: "Как устранить скрип при езде", image: .thirdPage, text: .thirdCell),
-//                    Article(name: "Стук в педалях: что делать?", image: .thirdPage, text: .thirdCell),
-//
-//    ]
-    
-    //MARK: for Favourite List
-    
-//    var favArray:[String] = []
     
     // MARK: for searchController
     let searchController = UISearchController(searchResultsController: nil)
@@ -154,11 +138,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.labelText.text = article.name.rawValue
         cell.imageView?.image = UIImage(named: article.image.rawValue)
         cell.difficultyImage.image = UIImage(named: article.difficulty.rawValue)
-        
-
-
-        
-        
+    
         return cell
     }
     

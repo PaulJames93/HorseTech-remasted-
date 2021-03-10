@@ -52,7 +52,6 @@ class ArticleViewController: UIViewController {
         textViewAdviceHC.constant = textViewAdvice.contentSize.height
         viewAdviceHC.constant = textViewAdvice.contentSize.height + 50
 
-        
          
         //настройка видео youTube
         getVideo(videoCode: article.video.rawValue)
